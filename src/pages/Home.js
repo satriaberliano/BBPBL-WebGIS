@@ -30,6 +30,9 @@ function Home() {
           </div>
         </div>
         <div className="home-container_item">
+          <div className="home-container_item-image">
+            <img src={paperMap} alt="people show paper map"></img>
+          </div>
           <div className="home-container_item-text">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -40,9 +43,6 @@ function Home() {
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum
             </p>
-          </div>
-          <div className="home-container_item-image">
-            <img src={paperMap} alt="people show paper map"></img>
           </div>
         </div>
         <div className="home-container_item">

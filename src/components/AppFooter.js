@@ -11,14 +11,16 @@ function AppFooter() {
       <div className="footer-app">
         <div className="footer_container">
           <div className="footer_company">
+            {/* <div className="footer_company-info"> */}
             <div className="footer_company-logo">
               <img src={logo} alt=""></img>
             </div>
-            <div className="footer_company-info">
-              <p className="footer_company-info-title">
-                Balai Besar Perikanan Budidaya Laut
-              </p>
-              <p className="footer_company-info-desc">
+            <div className="footer_company-title">
+              <p>Balai Besar Perikanan Budidaya Laut</p>
+            </div>
+            {/* </div> */}
+            <div className="footer_company-desc">
+              <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>

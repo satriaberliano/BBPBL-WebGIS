@@ -104,25 +104,37 @@ header .nav-btn {
 }
 
 .footer_company {
-  display: flex;
+  /* display: flex;
   gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; */
   padding: 10px 20px;
   border-right: 1px solid rgba(20, 108, 148, 0.4);
   width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 10px;
+}
+
+.footer_company-desc {
+  font-size: 16px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.footer_company-logo {
+  margin: auto;
 }
 
 .footer_company-logo img{
-  width: 60px;
+  width: 80px;
 }
 
-.footer_company-info-title {
+.footer_company-title {
   font-size: 28px;
   font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.footer_company-info-desc {
-  font-size: 16px;
+  margin: auto 0;
 }
 
 .footer_info {
@@ -202,8 +214,12 @@ header .nav-btn {
 }
 
 .home-container_item-image img {
-  width: 70%;
+  width: 80%;
   border-radius: 20px;
+}
+
+.home-container_item:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
 .home-container_item-text {
@@ -289,8 +305,133 @@ header .nav-btn {
 }
 
 /* =================================================== */
+/* =================================================== */
 
 
+.building-container {
+  margin: 50px;
+}
+
+.building-container h3 {
+  text-align: center;
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.building-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px; 
+  margin: 40px 0;
+}
+
+.building-item {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background-color: var(--main-color-1);
+}
+
+.building-item img{
+  width: 100%;
+}
+
+.building-item_text {
+  margin: 20px 30px 20px 30px;
+}
+
+.building-item_text-title {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.building-item_text-desc {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+
+
+
+/* =================================================== */
+/* =================================================== */
+
+
+
+.about-container {
+  margin: 50px;
+}
+
+.about-container h3 {
+  text-align: center;
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.about-container_company {
+  display: flex;
+  margin: 50px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.about-container_company-logo {
+  width: 50%;
+}
+
+.about-container_company-logo img {
+  width: 250px;
+  display: flex;
+  margin: auto;
+}
+
+.about-container_company-text {
+  width: 50%;
+}
+
+.about-container h4 {
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.about-container h5 {
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+.about-container_company-text p {
+  font-size: 16px;
+}
+
+.about-container_duty {
+  display: flex;
+  margin: 100px 20px;
+}
+
+.about-container_duty-vismis {
+  width: 50%;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 30px;
+}
+
+.about-container_duty-vission {
+  margin-bottom: 20px;
+}
+
+.about-container_duty-mission li {
+  margin-left: 18px;
+}
+
+.about-container_duty-task {
+  width: 50%;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 30px;
+}
+
+
+/* =================================================== */
 /* =================================================== */
 
 @media screen and (max-width: 768px) {
@@ -342,8 +483,261 @@ header .nav-btn {
     right: 25px;
   }
 
+  /* ======================================= */
+
   .facility-list {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+  }
+
+  .facility-item_text-desc {
+    font-size: 12px;
+  }
+
+  .facility-item_text-title {
+    font-size: 18px;
+  }
+
+  /* ======================================= */
+
+  .building-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .building-item_text-desc {
+    font-size: 12px;
+  }
+
+  .building-item_text-title {
+    font-size: 18px;
+  }
+
+  /* ======================================= */
+  /* ======================================= */
+
+  .about-container_company {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 40px;
+  }
+
+  .about-container h4 {
+    margin-bottom: 15px;
+  }
+
+  .about-container_company-logo {
+    margin: auto;
+    width: 100%;
+  }
+
+  .about-container_company-logo img {
+    width: 225px;
+  }
+
+  .about-container_company-text {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .about-container_duty {
+    flex-wrap: wrap;
+    margin: 60px 20px;
+  }
+
+  .about-container_duty-vismis {
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+
+  .about-container_duty-task {
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+  /* ======================================= */
+  /* ======================================= */
+
+  .home-container {
+    margin: 50px 30px;
+  }
+
+  .home-container_item {
+    margin: 90px 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home-container_item-image {
+    margin-bottom: 50px;
+  }
+
+  .home-container_item-image img {
+    width: 350px;
+  }
+
+  .home-container_item-text {
+    width: 100%;
+  }
+
+  /* ======================================= */
+  /* ======================================= */
+
+  .footer_container {
+    display: block;
+  }
+
+  .footer_company {
+    width: 100%;
+    margin: auto;
+    border: none;
+    gap: 20px;
+  }
+
+  .footer_company-desc {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .footer_info {
+    width: 100%;
+    margin: 20px auto;
+    border: none;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  .home-container {
+    margin: 50px 20px;
+  }
+
+  .home-container_item {
+    margin: 50px 10px !important;
+  }
+
+  .home-container_item-image img {
+    width: 250px;
+  }
+
+  .home-container_item-text {
+    font-size: 14px;
+    margin: 0 10px;
+  }
+
+  .home-container_item-text h4 {
+    font-size: 28px;
+  }
+
+  /* ======================================= */
+  /* ======================================= */
+
+  .footer-app {
+    padding-top: 50px;
+  }
+
+  .footer_company {
+    gap: 10px;
+  }
+
+  .footer_company-logo img {
+    width: 60px;
+  }
+
+  .footer_company-title {
+    font-size: 22px;
+  }
+
+  .footer_company-desc {
+    font-size: 12px;
+  }
+
+  .footer_info {
+    margin: 0;
+  }
+
+  .footer_info-item-text {
+    font-size: 12px;
+  }
+
+  .footer_social-media {
+    margin: 10px;
+  }
+
+  .footer_social-media ul li {
+    font-size: 30px;
+  }
+
+  /* ======================================= */
+
+  .facility-list {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .facility-item img {
+    width: 100%;
+  }
+
+  .facility-container h3 {
+    font-size: 30px;
+  }
+
+  .facility-item_text-desc {
+    font-size: 12px;
+  }
+
+  .facility-item_text-title {
+    font-size: 16px;
+  }
+
+  /* ======================================= */
+
+  .building-list {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .building-item img {
+    width: 100%;
+  }
+
+  .building-container h3 {
+    font-size: 30px;
+  }
+
+  .building-item_text-desc {
+    font-size: 12px;
+  }
+
+  .building-item_text-title {
+    font-size: 16px;
+  }
+
+  /* ======================================= */
+
+  .about-container h3 {
+    font-size: 30px;
+  }
+
+  .about-container_company {
+    margin: 50px 0;
+  }
+
+  .about-container_company-logo img {
+    width: 200px;
+  }
+
+  .about-container p, .about-container li {
+    font-size: 14px;
+  }
+
+  .about-container_duty {
+    margin: 50px 0;
   }
 }
