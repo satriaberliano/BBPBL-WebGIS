@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/BBPBL-WebGIS/static/css/main.b5722942.css",
+    "main.js": "/BBPBL-WebGIS/static/js/main.d7b06ef8.js",
+    "static/media/paper-map.png": "/BBPBL-WebGIS/static/media/paper-map.c35875d951c799273e8a.png",
+    "static/media/bbpbl-map.png": "/BBPBL-WebGIS/static/media/bbpbl-map.63f975836c45b8fbce35.png",
+    "static/media/bbpbl_logo.png": "/BBPBL-WebGIS/static/media/bbpbl_logo.34f23b1f3c6690a8a710.png",
+    "static/media/fish-underwater.jpg": "/BBPBL-WebGIS/static/media/fish-underwater.b00c2236b8d975fb6d97.jpg",
+    "static/media/small-building.jpg": "/BBPBL-WebGIS/static/media/small-building.7691cc9b1f924680fb0b.jpg",
+    "index.html": "/BBPBL-WebGIS/index.html",
+    "main.b5722942.css.map": "/BBPBL-WebGIS/static/css/main.b5722942.css.map",
+    "main.d7b06ef8.js.map": "/BBPBL-WebGIS/static/js/main.d7b06ef8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5722942.css",
+    "static/js/main.d7b06ef8.js"
+  ]
+}
