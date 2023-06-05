@@ -1,6 +1,6 @@
-export const rootPath = "/";
-export const homePath = "/home";
-export const featurePath = "/feature";
-export const facilityPath = "/facility";
-export const buildingPath = "/building";
-export const aboutUsPath = "/about";
+export const rootPath = "/BBPBL-WebGIS";
+export const homePath = "/BBPBL-WebGIS/home";
+export const featurePath = "/BBPBL-WebGIS/feature";
+export const facilityPath = "/BBPBL-WebGIS/facility";
+export const buildingPath = "/BBPBL-WebGIS/building";
+export const aboutUsPath = "/BBPBL-WebGIS/about";
