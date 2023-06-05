@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c0c4afd6.css",
+    "main.js": "/static/js/main.fbefb2a8.js",
+    "static/media/paper-map.png": "/static/media/paper-map.c35875d951c799273e8a.png",
+    "static/media/bbpbl-map.png": "/static/media/bbpbl-map.63f975836c45b8fbce35.png",
+    "static/media/bbpbl_logo.png": "/static/media/bbpbl_logo.34f23b1f3c6690a8a710.png",
+    "static/media/fish-underwater.jpg": "/static/media/fish-underwater.b00c2236b8d975fb6d97.jpg",
+    "static/media/small-building.jpg": "/static/media/small-building.7691cc9b1f924680fb0b.jpg",
+    "index.html": "/index.html",
+    "main.c0c4afd6.css.map": "/static/css/main.c0c4afd6.css.map",
+    "main.fbefb2a8.js.map": "/static/js/main.fbefb2a8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c0c4afd6.css",
+    "static/js/main.fbefb2a8.js"
+  ]
+}
