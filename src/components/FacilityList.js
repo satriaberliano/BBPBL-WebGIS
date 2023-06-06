@@ -30,12 +30,21 @@ function FacilityList({ facilities, searchTerm }) {
         .filter((value) => {
           if (searchTerm === "") {
             return value;
-          } else if (value.toLowerCase().includes(searchTerm.toLowerCase())) {
+          } else if (
+            value.title.toLowerCase().includes(searchTerm.toLowerCase())
+          ) {
             return value;
           }
+          return null;
         })
-        .map((facilityTitle, index) => {
-          return <FacilityItem key={index} facilityTitle={facilityTitle} />;
+        .map(({ title, desc }, index) => {
+          return (
+            <FacilityItem
+              key={index}
+              facilityTitle={title}
+              facilityDesc={desc}
+            />
+          );
         })}
     </div>
   );
