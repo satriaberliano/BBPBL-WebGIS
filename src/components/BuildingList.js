@@ -26,6 +26,7 @@ function BuildingList({ buildings, searchTerm }) {
           } else if (value.toLowerCase().includes(searchTerm.toLowerCase())) {
             return value;
           }
+          return null;
         })
         .map((buildingTitle, index) => {
           return <BuildingItem key={index} buildingTitle={buildingTitle} />;

@@ -39,7 +39,7 @@ const markers = [
 
 function BuildingMap() {
   return (
-    <LoadScript googleMapsApiKey="AIzaSyApiv-HP2d6BwTdpvyzTzQp3wplhWyaLDs">
+    <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API}>
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={17}>
         {/* Child components, such as markers, info windows, etc. */}
         <>
