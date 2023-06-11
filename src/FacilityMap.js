@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import {
   GoogleMap,
   InfoWindow,
-  // LoadScript,
   Marker,
   useJsApiLoader,
 } from "@react-google-maps/api";
@@ -194,7 +193,6 @@ function FacilityMap() {
   }
 
   return (
-    // <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API}>
     <GoogleMap
       mapContainerStyle={containerStyle}
       center={center}
@@ -221,13 +219,11 @@ function FacilityMap() {
           >
             <>
               <p>{selectedMarker.label}</p>
-              <button onClick={() => setSelectedMarker("")}>Close</button>
             </>
           </InfoWindow>
         )}
       </>
     </GoogleMap>
-    // </LoadScript>
   );
 }
 
