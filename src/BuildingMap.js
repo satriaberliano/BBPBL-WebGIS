@@ -1,5 +1,11 @@
 import React from "react";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import {
+  GoogleMap,
+  // LoadScript,
+  Marker,
+  useJsApiLoader,
+} from "@react-google-maps/api";
+import { Oval } from "react-loader-spinner";
 
 const containerStyle = {
   width: "100%",
@@ -10,6 +16,13 @@ const containerStyle = {
 const center = {
   lat: -5.528191349298218,
   lng: 105.24823239058476,
+};
+
+const options = {
+  zoomControl: false,
+  streetViewControl: false,
+  mapTypeControl: false,
+  fullscreenControl: false,
 };
 
 const markers = [
@@ -38,18 +51,49 @@ const markers = [
 ];
 
 function BuildingMap() {
+  const { isLoaded } = useJsApiLoader({
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API,
+  });
+
+  if (!isLoaded) {
+    return (
+      <>
+        <Oval
+          height={80}
+          width={80}
+          color="#19A7CE"
+          wrapperStyle={{
+            justifyContent: "center",
+            alignItems: "center",
+            margin: "50px",
+          }}
+          wrapperClass=""
+          visible={true}
+          ariaLabel="oval-loading"
+          secondaryColor="white"
+          strokeWidth={2}
+          strokeWidthSecondary={2}
+        />
+      </>
+    );
+  }
+
   return (
-    <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API}>
-      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={17}>
-        {/* Child components, such as markers, info windows, etc. */}
-        <>
-          {" "}
-          {markers.map(({ lat, lng }) => {
-            return <Marker position={{ lat, lng }} />;
-          })}
-        </>
-      </GoogleMap>
-    </LoadScript>
+    // <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API}>
+    <GoogleMap
+      mapContainerStyle={containerStyle}
+      center={center}
+      zoom={17}
+      options={options}
+    >
+      {/* Child components, such as markers, info windows, etc. */}
+      <>
+        {markers.map(({ lat, lng }, index) => {
+          return <Marker position={{ lat, lng }} key={index} />;
+        })}
+      </>
+    </GoogleMap>
+    // </LoadScript>
   );
 }
 
