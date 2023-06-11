@@ -29,68 +29,138 @@ const options = {
 
 const markers = [
   {
-    lat: -5.528345843970753,
-    lng: 105.24802813041269,
     label: "Lab Kualitas Air",
+    position: {
+      lat: -5.528345843970753,
+      lng: 105.24802813041269,
+    },
   },
   {
-    lat: -5.52812064449724,
-    lng: 105.24802386151094,
     label: "Lab Keskanling",
+    position: {
+      lat: -5.52812064449724,
+      lng: 105.24802386151094,
+    },
   },
-  { lat: -5.528251624644291, lng: 105.24851550680253, label: "POKJA" },
-  { lat: -5.528451319195653, lng: 105.25001287207624, label: "Kantor" },
   {
-    lat: -5.527949248692946,
-    lng: 105.24767168412355,
+    label: "POKJA",
+    position: {
+      lat: -5.528251624644291,
+      lng: 105.24851550680253,
+    },
+  },
+  {
+    label: "Kantor",
+    position: {
+      lat: -5.528451319195653,
+      lng: 105.25001287207624,
+    },
+  },
+  {
     label: "Green House Rumput Laut",
+    position: {
+      lat: -5.527949248692946,
+      lng: 105.24767168412355,
+    },
   },
-  { lat: -5.527731071543788, lng: 105.2464806648156, label: "Kantor Satpam" },
-  { lat: -5.5279500217625355, lng: 105.24767341070263, label: "Guest House" },
   {
-    lat: -5.527928663883119,
-    lng: 105.24798454695593,
+    label: "Kantor Satpam",
+    position: {
+      lat: -5.527731071543788,
+      lng: 105.2464806648156,
+    },
+  },
+  {
+    label: "Guest House",
+    position: {
+      lat: -5.5279500217625355,
+      lng: 105.24767341070263,
+    },
+  },
+  {
     label: "Pelayanan Publik",
+    position: {
+      lat: -5.527928663883119,
+      lng: 105.24798454695593,
+    },
   },
-  { lat: -5.5283503236637035, lng: 105.24961096421228, label: "Masjid" },
   {
-    lat: -5.528582504501877,
-    lng: 105.24802287503127,
+    label: "Masjid",
+    position: {
+      lat: -5.5283503236637035,
+      lng: 105.24961096421228,
+    },
+  },
+  {
     label: "Taman dan Lapangan Voli",
+    position: {
+      lat: -5.528582504501877,
+      lng: 105.24802287503127,
+    },
   },
-  { lat: -5.528270296550457, lng: 105.24881670807628, label: "Auditorium" },
-  { lat: -5.528259705247529, lng: 105.24863523944583, label: "Koperasi" },
   {
-    lat: -5.52851843092977,
-    lng: 105.24821599408506,
+    label: "Auditorium",
+    position: {
+      lat: -5.528270296550457,
+      lng: 105.24881670807628,
+    },
+  },
+  {
+    label: "Koperasi",
+    position: {
+      lat: -5.528259705247529,
+      lng: 105.24863523944583,
+    },
+  },
+  {
     label: "Ruang Pelatihan",
+    position: {
+      lat: -5.52851843092977,
+      lng: 105.24821599408506,
+    },
   },
   {
-    lat: -5.528757502089303,
-    lng: 105.2481708662446,
     label: "Asrama Kerapu (Asrama Betina)",
+    position: {
+      lat: -5.528757502089303,
+      lng: 105.2481708662446,
+    },
   },
   {
-    lat: -5.528165538616601,
-    lng: 105.24992771983842,
     label: "Asrama Kakap (Asrama Jantan)",
+    position: {
+      lat: -5.528165538616601,
+      lng: 105.24992771983842,
+    },
   },
   {
-    lat: -5.5279187268742715,
-    lng: 105.24896401655212,
     label: "Perpustakaan",
+    position: {
+      lat: -5.5279187268742715,
+      lng: 105.24896401655212,
+    },
   },
   {
-    lat: -5.527822772834115,
-    lng: 105.24848966783787,
     label: "Lapangan Upacara",
+    position: {
+      lat: -5.527822772834115,
+      lng: 105.24848966783787,
+    },
   },
   {
-    lat: -5.528564717437792,
-    lng: 105.24965352833938,
     label: "Gedung Genset",
+    position: {
+      lat: -5.528564717437792,
+      lng: 105.24965352833938,
+    },
   },
-  { lat: -5.527662948534778, lng: 105.24915098787078, label: "Pakan Alami" },
+  {
+    label: "Pakan Alami",
+    position: {
+      lat: -5.527662948534778,
+      lng: 105.24915098787078,
+    },
+  },
 ];
 
 function FacilityMap() {
@@ -136,8 +206,8 @@ function FacilityMap() {
         {markers.map((marker) => {
           return (
             <Marker
-              position={` ${marker.lat}, ${marker.lng} `}
-              key={`${marker.label}`}
+              position={marker.position}
+              key={marker.label}
               onClick={() => {
                 setSelectedMarker(marker);
               }}
@@ -145,9 +215,13 @@ function FacilityMap() {
           );
         })}
         {selectedMarker && (
-          <InfoWindow position={`${selectedMarker.lat}, ${selectedMarker.lng}`}>
+          <InfoWindow
+            position={selectedMarker.position}
+            key={selectedMarker.label}
+          >
             <>
               <p>{selectedMarker.label}</p>
+              <button onClick={() => setSelectedMarker("")}>Close</button>
             </>
           </InfoWindow>
         )}
