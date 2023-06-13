@@ -119,14 +119,14 @@ const markers = [
     },
   },
   {
-    label: "Asrama Kerapu (Asrama Betina)",
+    label: "Asrama Kerapu (Asrama Perempuan)",
     position: {
       lat: -5.528757502089303,
       lng: 105.2481708662446,
     },
   },
   {
-    label: "Asrama Kakap (Asrama Jantan)",
+    label: "Asrama Kakap (Asrama Laki-Laki)",
     position: {
       lat: -5.528165538616601,
       lng: 105.24992771983842,
