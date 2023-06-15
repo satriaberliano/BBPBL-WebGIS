@@ -543,6 +543,10 @@ header .nav-btn {
 
   /* ======================================= */
 
+  .facility-container {
+    margin: 40px;
+  }
+
   .facility-list {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
@@ -566,6 +570,9 @@ header .nav-btn {
 
   /* ======================================= */
 
+  .building-container {
+    margin: 40px;
+  }
 
   .building-list {
     grid-template-columns: 1fr 1fr;
@@ -683,7 +690,7 @@ header .nav-btn {
 
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 475px) {
   .home-container {
     margin: 50px 20px;
   }
@@ -755,6 +762,10 @@ header .nav-btn {
     width: 100%;
   }
 
+  .facility-container {
+    margin: 30px;
+  }
+
   .facility-container h3 {
     font-size: 30px;
   }
@@ -777,6 +788,7 @@ header .nav-btn {
 
   .facility-search_logo {
     font-size: 12px;
+    padding: 13px;
   }
 
   /* ======================================= */
@@ -788,6 +800,10 @@ header .nav-btn {
 
   .building-item img {
     width: 100%;
+  }
+
+  .building-container {
+    margin: 30px;
   }
 
   .building-container h3 {
