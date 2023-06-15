@@ -57,6 +57,10 @@ header .navigation ul li a {
   margin-right: 5px;
 }
 
+/* header .navigation ul li a:active {
+  font-weight: bold;
+} */
+
 header .navigation ul li a:hover{
   color: var(--main-color-2);
   transition: 0.2s ease-in;
@@ -545,11 +549,15 @@ header .nav-btn {
   }
 
   .facility-item_text-desc {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .facility-item_text-title {
     font-size: 18px;
+  }
+
+  .facility-input_search {
+    width: 100%;
   }
 
   /* ======================================= */
@@ -565,11 +573,15 @@ header .nav-btn {
   }
 
   .building-item_text-desc {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .building-item_text-title {
     font-size: 18px;
+  }
+
+  .building-input_search {
+    width: 100%;
   }
 
   /* ======================================= */
@@ -748,11 +760,23 @@ header .nav-btn {
   }
 
   .facility-item_text-desc {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .facility-item_text-title {
-    font-size: 16px;
+    font-size: 18px;
+  }
+
+  .facility-search {
+    margin: 10px 0;
+  }
+
+  .facility-input_search {
+    font-size: 12px;
+  }
+
+  .facility-search_logo {
+    font-size: 12px;
   }
 
   /* ======================================= */
@@ -771,11 +795,23 @@ header .nav-btn {
   }
 
   .building-item_text-desc {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .building-item_text-title {
-    font-size: 16px;
+    font-size: 18px;
+  }
+
+  .building-search {
+    margin: 10px 0;
+  }
+
+  .building-input_search {
+    font-size: 12px;
+  }
+
+  .building-search_logo {
+    font-size: 12px;
   }
 
   /* ======================================= */

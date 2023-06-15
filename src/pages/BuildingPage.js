@@ -1,24 +1,21 @@
 import React, { useEffect, useState } from "react";
 import BuildingList from "../components/BuildingList";
-// import BuildingSearch from "../components/BuildingSearch";
 import BuildingMap from "../BuildingMap";
 import { AiOutlineSearch } from "react-icons/ai";
+import { BASE_URL_BUILDINGS } from "../api";
 
 function BuildingPage() {
   const [buildings, setBuildings] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
-  useEffect(() => {
-    const items = [
-      "Gedung 1",
-      "Gedung 2",
-      "Gedung 3",
-      "Gedung 4",
-      "Gedung 5",
-      "Gedung 6",
-    ];
+  async function fetchBuildings() {
+    const response = await fetch(BASE_URL_BUILDINGS);
+    const responseJson = await response.json();
+    return setBuildings(responseJson);
+  }
 
-    setBuildings(items);
+  useEffect(() => {
+    fetchBuildings();
   }, []);
 
   return (
