@@ -760,7 +760,7 @@ header .nav-btn {
   }
 
   .facility-item_text-desc {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .facility-item_text-title {
@@ -795,7 +795,7 @@ header .nav-btn {
   }
 
   .building-item_text-desc {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .building-item_text-title {
@@ -812,6 +812,7 @@ header .nav-btn {
 
   .building-search_logo {
     font-size: 12px;
+    padding: 13px;
   }
 
   /* ======================================= */
