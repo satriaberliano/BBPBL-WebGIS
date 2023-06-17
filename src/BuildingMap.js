@@ -20,9 +20,7 @@ const center = {
 };
 
 const options = {
-  zoomControl: false,
   mapTypeControl: false,
-  fullscreenControl: false,
 };
 
 function BuildingMap() {
