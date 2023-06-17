@@ -21,8 +21,9 @@ function AppFooter() {
             {/* </div> */}
             <div className="footer_company-desc">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Balai Budidaya Perikanan Laut Lampung (BBPBL) merupakan sebuah
+                institusi di Lampung yang fokus pada pengembangan perikanan
+                tangkap dan perikanan budidaya.
               </p>
             </div>
           </div>
