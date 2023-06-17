@@ -293,6 +293,7 @@ header .nav-btn {
 
 .facility-item img{
   width: 100%;
+  aspect-ratio: 16/9;
 }
 
 .facility-item_text {
@@ -365,6 +366,7 @@ header .nav-btn {
 
 .building-item img{
   width: 100%;
+  aspect-ratio: 16/9;
 }
 
 .building-item_text {
