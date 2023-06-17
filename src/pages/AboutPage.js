@@ -12,11 +12,15 @@ function AboutPage() {
         <div className="about-container_company-text">
           <h4>Deksripsi</h4>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            pharetra metus id ultricies rutrum. Vestibulum ante ipsum primis in
-            faucibus orci luctus et ultrices posuere cubilia curae; Proin
-            eleifend cursus ante, vel sollicitudin mauris sodales vitae. Mauris
-            vitae augue metus. Suspendisse potenti.
+            Balai Budidaya Perikanan Laut Lampung (BBPBL) merupakan sebuah
+            institusi di Lampung yang fokus pada pengembangan perikanan tangkap
+            dan perikanan budidaya. BBPBL memiliki fasilitas dan area yang
+            penting untuk kegiatan perikanan, dan untuk memaksimalkan
+            pemanfaatan sumber daya tersebut, diperlukan sistem informasi yang
+            efisien dan akurat. Penggunaan Sistem Informasi Geografis (SIG)
+            menjadi sangat relevan dalam konteks ini, karena dapat membantu
+            dalam pemetaan, pengorganisasian, dan penyajian informasi mengenai
+            lokasi dan fasilitas BBPBL.
           </p>
         </div>
       </div>
