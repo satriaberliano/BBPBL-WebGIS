@@ -21,7 +21,6 @@ const center = {
 
 const options = {
   zoomControl: false,
-  streetViewControl: false,
   mapTypeControl: false,
   fullscreenControl: false,
 };
