@@ -91,6 +91,14 @@ header .nav-btn {
   display: none;
 }
 
+.true_status {
+  color: rgb(76, 188, 76);
+}
+
+.false_status {
+  color: rgb(183, 61, 61);
+}
+
 /* ================================================== */
 /* ================================================== */
 
@@ -335,6 +343,14 @@ header .nav-btn {
   width: 50%;
 }
 
+.facility-item-text-status {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  margin: 10px 0;
+}
+
 /* =================================================== */
 /* =================================================== */
 
@@ -406,6 +422,14 @@ header .nav-btn {
   border-radius:0 10px 10px 0 ;
   padding: 10px;
   width: 50%;
+}
+
+.building-item-text-status {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  margin: 10px 0;
 }
 
 
