@@ -15,13 +15,14 @@ function FacilityList({ facilities, searchTerm }) {
           }
           return null;
         })
-        .map(({ title, desc, image }, index) => {
+        .map(({ title, desc, image, status }, index) => {
           return (
             <FacilityItem
               key={index}
               facilityTitle={title}
               facilityDesc={desc}
               facilityImage={image}
+              facilityStatus={status}
             />
           );
         })}

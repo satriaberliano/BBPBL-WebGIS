@@ -15,13 +15,14 @@ function BuildingList({ buildings, searchTerm }) {
           }
           return null;
         })
-        .map(({ title, desc, image }, index) => {
+        .map(({ title, desc, image, status }, index) => {
           return (
             <BuildingItem
               key={index}
               buildingTitle={title}
               buildingDesc={desc}
               buildingImage={image}
+              buildingStatus={status}
             />
           );
         })}

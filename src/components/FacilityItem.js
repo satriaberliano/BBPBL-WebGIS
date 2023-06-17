@@ -1,7 +1,13 @@
 import React from "react";
 import building from "../assets/small-building.jpg";
+import { AiFillCloseCircle } from "react-icons/ai";
 
-function FacilityItem({ facilityTitle, facilityDesc, facilityImage }) {
+function FacilityItem({
+  facilityTitle,
+  facilityDesc,
+  facilityImage,
+  facilityStatus,
+}) {
   return (
     <div className="facility-item">
       <img
@@ -11,6 +17,11 @@ function FacilityItem({ facilityTitle, facilityDesc, facilityImage }) {
       ></img>
       <div className="facility-item_text">
         <p className="facility-item_text-title">{facilityTitle}</p>
+        {facilityStatus ? null : (
+          <p className="facility-item-text-status false_status">
+            <AiFillCloseCircle /> Restricted Area
+          </p>
+        )}
         <p className="facility-item_text-desc">{facilityDesc}</p>
       </div>
     </div>
