@@ -10,7 +10,7 @@ function AboutPage() {
           <img src={bbpblLogo} alt="bbpbl logo"></img>
         </div>
         <div className="about-container_company-text">
-          <h4>Deksripsi</h4>
+          <h4>Deskripsi</h4>
           <p>
             Balai Budidaya Perikanan Laut Lampung (BBPBL) merupakan sebuah
             institusi di Lampung yang fokus pada pengembangan perikanan tangkap
